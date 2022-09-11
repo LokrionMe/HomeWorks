@@ -11,7 +11,7 @@
     int[,] array = new int[m, n];
     for (int i = 0; i < m; i++)
         for (int j = 0; j < n; j++)
-            array[i, j] = new Random().Next(minValue, maxValue);
+            array[i, j] = new Random().Next(minValue, maxValue + 1);
     return array;
 }
 void Print2dArray(int[,] array)

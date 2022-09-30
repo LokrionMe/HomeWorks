@@ -10,3 +10,15 @@
     }
     return array;
 }
+void PrintArray (string[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length;i++)
+    {
+        if (i<array.Length - 1) Console.WriteLine($"{array[i]}");
+        if (i==array.Length - 1) Console.Write($"{array[i]}]");
+    }
+    Console.WriteLine();
+}
+string[] NewArray = CreateArray();
+PrintArray(NewArray);
